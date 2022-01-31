@@ -1,7 +1,5 @@
 .hero {
   background-color: var(--brand-color);
-}
-.hero__block {
   position: relative;
   background-color: var(--brand-color);
   background-image: url(/images/Hero/ellipse-mob.png);
@@ -16,18 +14,20 @@
     background-position: center right 35%;
   }
 }
+.hero__block {
+}
 .setion__titel {
   font-family: Titan One;
   position: relative;
   z-index: 25;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  // padding-left: 20px;
   padding-top: 137px;
   color: var(--accent-color);
 
   font-size: 48px;
-  line-height: 55px;
+  line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 19px;
@@ -36,7 +36,7 @@
   }
   @media screen and (min-width: $desktop) {
     font-size: 58px;
-    line-height: 66px;
+    line-height: 1.14;
 
     letter-spacing: 0.06em;
     margin-bottom: 84px;
@@ -47,10 +47,10 @@
   color: var(--main-bgc);
   text-transform: uppercase;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 1.15;
   @media screen and (min-width: $desktop) {
     font-size: 38px;
-    line-height: 44px;
+    line-height: 1.16;
     letter-spacing: 0.04em;
   }
 }
@@ -98,7 +98,7 @@
   border-radius: 50px;
   margin-bottom: 160px;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
 
   &:not(last-child) {
     margin-right: 10px;
@@ -111,7 +111,7 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 292px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     &:not(last-child) {
       margin-right: 17px;
     }
@@ -126,7 +126,6 @@
   display: flex;
   position: relative;
   z-index: 20;
-  margin-left: 20px;
 }
 /*-------------milk--------------------*/
 .hero__milk {
@@ -214,7 +213,7 @@
   @media screen and (min-width: $tablet) {
     font-family: Titan One;
     font-size: 28px;
-    line-height: 32px;
+    line-height: 1.14;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -222,20 +221,20 @@
   }
   @media screen and (min-width: $desktop) {
     font-size: 46px;
-    line-height: 53px;
+    line-height: 1.15;
     letter-spacing: 0.04em;
   }
 }
 .hero__cofes {
   @media screen and (min-width: $tablet) {
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     text-align: -webkit-center;
     color: var(--main-bgc);
   }
   @media screen and (min-width: $desktop) {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
   }
 }
 /*-------------gerl--------------------*/
