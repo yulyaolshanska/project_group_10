@@ -1,5 +1,4 @@
 .hero {
-  background-color: var(--brand-color);
   position: relative;
   background-color: var(--brand-color);
   background-image: url(/images/Hero/ellipse-mob.png);
@@ -15,6 +14,7 @@
   }
 }
 .hero__block {
+
 }
 .setion__titel {
   font-family: Titan One;
@@ -38,7 +38,8 @@
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
-    margin-bottom: 171px;
+    margin-bottom: 25px;
+    padding-top: 171px;
   }
 }
 .hero___titel--white {
@@ -96,7 +97,7 @@
 }
 .hero__button-block {
   display: flex;
-  margin-bottom: 160px;
+  margin-bottom: 100px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 66px;
   }
@@ -119,16 +120,8 @@
   }
 }
 .herro__icon-milk {
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
 }
-.herro__icon-milk--desc {
-  display: none;
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-}
+
 .herro__text-milk {
   position: relative;
   @media screen and (min-width: $tablet) {
@@ -172,6 +165,9 @@
     position: absolute;
     top: 96px;
     right: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 160px;
   }
 }
 .hero__item {
@@ -223,17 +219,5 @@
     right: 34px;
     bottom: 0;
   }
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
 }
-.hero__tasty--desc {
-  display: none;
-  @media screen and (min-width: $desktop) {
-    display: block;
-    display: block;
-    position: absolute;
-    right: 34px;
-    bottom: 0;
-  }
-}
+

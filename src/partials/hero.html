@@ -1,5 +1,5 @@
-<section class="hero section">
-  <div class="hero__block container">
+<section class=" section hero">
+  <div class="container hero__block">
     <h1 class="setion__titel animate__animated animate__backInLeft">
       <span class="hero___titel--white"
         >ice cream <br />
@@ -45,23 +45,17 @@
     <div class="hero__milk">
       <picture>
         <source
-          srcset="./images/Hero/hero-milk-tablet.png 1x, ./images/Hero/hero-milk-tablet@2x.png 2x"
-          media="(min-width: tablet)"
+          srcset="./images/Hero/hero-milk-desktop.png 1x, ./images/Hero/hero-milk-desktop@2x.png 2x"
+          media="(min-width: 1280px)" type="image/jpeg"
         />
+        <source
+          srcset="./images/Hero/hero-milk-tablet.png 1x, ./images/Hero/hero-milk-tablet@2x.png 2x"
+          media="(min-width: 768px)" type="image/jpeg"
+        />
+        
         <img
           class="herro__icon-milk animate__animated animate__backInLeft animate__delay-2s"
           src="/images/Hero/hero-milk-tablet.png"
-          alt="icon milk"
-        />
-      </picture>
-      <picture>
-        <source
-          srcset="./images/Hero/hero-milk-desktop.png 1x, ./images/Hero/hero-milk-desktop@2x.png 2x"
-          media="(min-width: desctop)"
-        />
-        <img
-          class="herro__icon-milk--desc animate__animated animate__backInLeft animate__delay-2s"
-          src="/images/Hero/hero-milk-desktop.png"
           alt="icon milk"
         />
       </picture>
@@ -85,8 +79,12 @@
     </div>
     <picture>
       <source
+        srcset="./images/Hero/hero-girl-desktop.png 1x, ./images/Hero/hero-girl-desktop@2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
         srcset="./images/Hero/hero-girl-tablet.png 1x, ./images/Hero/hero-girl-tablet@2x.png 2x"
-        media="(min-width: tablet)"
+        media="(min-width: 768px)"
       />
       <img
         class="hero__tasty animate__animated animate__zoomIn animate__delay-1s"
@@ -94,16 +92,6 @@
         alt="gerl with milk"
       />
     </picture>
-    <picture>
-      <source
-        srcset="./images/Hero/hero-girl-desktop.png 1x, ./images/Hero/hero-girl-desktop@2x.png 2x"
-        media="(min-width: desctop)"
-      />
-      <img
-        class="hero__tasty--desc animate__animated animate__zoomIn animate__delay-1s"
-        src="/images/Hero/hero-girl-desktop.png"
-        alt="gerl with milk"
-      />
-    </picture>
   </div>
+</div>
 </section>
