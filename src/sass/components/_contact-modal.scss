@@ -199,6 +199,7 @@
 
 .contact-modal__button-box {
   margin: 0 auto;
+  // text-align: center;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
@@ -206,9 +207,9 @@
 }
 
 .contact-modal__button {
-  display: block;
-  min-width: 160px;
-  margin: 0 auto;
+  // display: block;
+  // min-width: 160px;
+  // margin: 0 auto;
 
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
@@ -218,17 +219,47 @@
 }
 
 .contact-modal__link {
-  display: block;
+  cursor: pointer;
+  height: 44px;
+  min-width: 64px;
+  border: none;
+  border-radius: var(--button-border-radius);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.29;
+  padding: 0 20px;
+  transition: color 250ms linear;
+  transition: background-color 250ms linear;
+  color: var(--main-bgc);
+  background-color: var(--accent-color);
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-
     &:not(:last-child) {
-      margin-right: 20px;
+      // margin-bottom: 0;
+      // margin-right: 20px;
     }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../images/Contacts/greater-than-white.svg');
+    height: 10px;
+    width: 6px;
+    display: inline-block;
+    margin-left: 11px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-bgc);
   }
 }
