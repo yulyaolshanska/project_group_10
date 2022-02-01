@@ -34,6 +34,7 @@ z-index: 950;
     transform: translate(-50%, -50%) scale(1);
     max-width: 700px;
     min-height: 760px;
+    max-height: 75vh;
     width: 100%;
   }
 
@@ -172,8 +173,8 @@ z-index: 950;
   position: relative;
   flex-direction: column;
   width: 124px;
-  &:not(:last-child) {
-  }
+  // &:not(:last-child) {
+  // }
 }
 
 .modal-box__num {
@@ -207,7 +208,20 @@ z-index: 950;
 }
 
 .contact-modal__button {
-  width: 160px;
+  display: block;
+  min-width: 160px;
+  margin: 0 auto;
+
+  
+}
+
+.contact-modal__button:not(:last-child) {
+
+  @media screen and (min-width: $tablet) {
+   // margin-right: 20px;
+  }
+  
+
 }
 
 .contact-modal__link {
