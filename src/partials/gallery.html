@@ -1,30 +1,19 @@
 <section class="section gallery__section">
-  <h2 class="section__title--is-hidden">different types of ice-cream</h2>
-  <div class="gallery__container">
-    <picture class="gallery">
-      <source
-        srcset="
-          ./images/Gallery/gallery-desktop.webp    1x,
-          ./images/Gallery/gallery-desktop@2x.webp 2x
-        "
-        type="image/webp"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="./images/Gallery/gallery-tablet.webp 1x, ./images/Gallery/gallery-tablet@2x.webp 2x"
-        type="image/webp"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="./images/Gallery/gallery-mobile.png 1x, ./images/Gallery/gallery-mobile@2x.png 2x"
-        type="image/png"
-        media="(min-width: 480px)"
-      />
-      <img
-        class="gallery__img"
-        src="./images/Gallery/gallery-mobile.png"
-        alt="different types of ice-cream"
-      />
-    </picture>
+  <div class="container">
+    <h2 class="section__title--is-hidden">different types of ice-cream</h2>
+    <div class="gallery__container">
+      <!-- ===========Masonry Galary========== -->
+      <div class="gallery-gride grid">
+        <img class="grid-item gallery-item grid-item--width3" src="/images/Gallery/1.jpg" />
+        <img class="grid-item gallery-item grid-item--width2" src="/images/Gallery/2.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/3.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/4.jpg" />
+        <img class="grid-item gallery-item grid-item--width3" src="/images/Gallery/6.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/5.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/7.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/8.jpg" />
+        <img class="grid-item gallery-item" src="/images/Gallery/10.jpg" />
+      </div>
+    </div>
   </div>
 </section>
