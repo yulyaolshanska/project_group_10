@@ -206,19 +206,20 @@ body.modal-about-menu--visible {
 // =======modal buy block контейнер для формы и кругов
 
 .modal-about__block {
-  justify-content: center;
+  
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: wheat;
-  overflow: scroll;
+  
   overflow-x: hidden;
   height: 44vh;
   margin-bottom: 20px;
   margin-top: 20px;
 
   @media screen and (min-width: $mobile) {
-    height: 50vh;
+    // height: 50vh;
   }
 }
 
@@ -230,7 +231,7 @@ body.modal-about-menu--visible {
 
 .modal-about__write {
   margin-bottom: 20px;
-  width: 360px;
+  width: 60vw;
 }
 
 .modal-about__label {
@@ -247,57 +248,142 @@ body.modal-about-menu--visible {
 }
 
 .modal-about__text {
-  // overflow: scroll;
-  overflow-x: hidden;
+  
+  // overflow-x: hidden;
+
+  margin-top: 30px;
 }
 
 // здесь заканчивается описание продукта
 
 // кружочки в модал
 
-.modal-about__box {
-  border: 2px dashed #2a2a2a;
-  border-radius: 4px;
-  display: flex;
+// .modal-about__box {
+//   border: 2px dashed #2a2a2a;
+//   border-radius: 4px;
+//   display: flex;
 
-  justify-content: space-around;
-  align-items: center;
-  min-height: calc(10vh);
-  width: 80%;
-}
+//   justify-content: space-around;
+//   align-items: center;
+//   min-height: calc(10vh);
+//   width: 80%;
+// }
 
-.modal-about__box--bottom {
-  margin-top: 30px;
-}
+// .modal-about__box--bottom {
+//   margin-top: 30px;
+// }
 
-.modal-about__circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: min-content;
-  height: 50px;
-  // flex-shrink: 0;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 10px;
+// .modal-about__circle {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: min-content;
+//   height: 50px;
+//   // flex-shrink: 0;
+//   margin-left: 30px;
+//   margin-right: 30px;
+//   padding: 10px;
+//   border-radius: 50%;
+//   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+//     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+//   transition-property: transform;
+//   transition-duration: 1000ms;
+
+//   background-image: radial-gradient(
+//     circle at center,
+//     var(--brand-color) 10%,
+//     var(--accent-color) 50%
+//   );
+// }
+
+// .modal-about__box:hover .modal-about__circle {
+//   transform: scale(1.5);
+// }
+
+// .circle:nth-child(1) {
+//   transition-duration: 1000ms;
+// }
+
+
+// кнопка невозврата
+
+
+.up-button__cover {
+  position: fixed;
+  bottom:   24px;
+  right:    24px;
+
+  padding: 30px;
   border-radius: 50%;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border: solid 9px var(--mobile-menu-bgc);
+  // border: solid 6px greenyellow;
 
-  transition-property: transform;
-  transition-duration: 1000ms;
+  // &:hover,
+  // &:focus {
+  //   // background-color: var(--hover-button-bgc);
+  //   // box-shadow: -2px 3px 4px var(--hover-button-shadow);
+  //   // transform: scale(0.95);
+   
+    
 
-  background-image: radial-gradient(
-    circle at center,
-    var(--brand-color) 10%,
-    var(--accent-color) 50%
-  );
+  //   // box-shadow:   -2px 3px 15px var(--dark-brand-color),
+  //   //               0px 1px 10px var(--dark-brand-color), 
+  //   //               3px 1px 6px var(--dark-brand-color);
+
+  //   // box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);             
+  // }
+
+
+
 }
 
-.modal-about__box:hover .modal-about__circle {
-  transform: scale(1.5);
+
+.up-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+border: none;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--hover-button-bgc);
+  background-color: var(--hover-button-bgc);
+  animation: animate-up 2000ms infinite 2000ms;
+  box-shadow: inset 0 0 10px 5px var(--brand-color); 
+
+  &:hover,
+  &:focus {
+    
+    // box-shadow: -2px 3px 4px var(--hover-button-shadow);
+    transform: scale(0.95);
+    // border: 1px solid var(--hover-button-border);
+    background-color: var(--mobile-menu-bgc);
+
+    // box-shadow:   -2px 3px 15px var(--dark-brand-color),
+    //               0px 1px 10px var(--dark-brand-color), 
+    //               3px 1px 6px var(--dark-brand-color);
+
+    box-shadow: inset 0 0 10px 5px var(--brand-color);             
+  }
+
 }
 
-.circle:nth-child(1) {
-  transition-duration: 1000ms;
+
+@keyframes animate-up {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(-120deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
 }
