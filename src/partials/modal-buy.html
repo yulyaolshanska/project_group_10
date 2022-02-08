@@ -1,6 +1,7 @@
 <div class="modal-buy__backdrop backdrop visually-hidden modal-buy__offer modal-buy-menu__offer">
   <div class="modal-buy">
-    <button class="modal-button__close modal-buy--close modal-buy-menu--close">
+    <button class="modal-button__close modal-buy--close modal-buy-menu--close"
+    aria-label="button for close modal window">
       <svg class="modal-button__icon">
         <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
@@ -10,11 +11,13 @@
     <!-- добавить адапитв рисунка -->
     <picture class="contact-modal__img">
       <source
-        srcset="./images/Hero/hero-girl-desktop.png 1x, ./images/Hero/hero-girl-desktop@2x.png 2x"
+        srcset="./images/Hero/hero-girl-desktop.png     1x, 
+                ./images/Hero/hero-girl-desktop@2x.png  2x"
         media="(min-width: 1280px)"
       />
       <source
-        srcset="./images/Hero/hero-girl-tablet.png 1x, ./images/Hero/hero-girl-tablet@2x.png 2x"
+        srcset="./images/Hero/hero-girl-tablet.png      1x,
+                ./images/Hero/hero-girl-tablet@2x.png   2x"
         media="(min-width: 768px)"
       />
 
@@ -23,7 +26,8 @@
 
     <div class="modal-buy__block">
       <!-- ==========здесь должна быть форма заказа мороженного==== -->
-      <form class="modal-buy__form">
+      <form class="modal-buy__form"
+      aria-label="form to ordered ice-cream">
         <h2 class="section__label modal-buy__title">Make an order</h2>
         <div>
           <label class="form-field">
@@ -69,25 +73,18 @@
           ></textarea>
         </div>
 
-        <!-- <div class="policy">
-          <label class="policy-field"
-            ><input type="checkbox" class="checkbox" name="policy" required />
-            <span class="checkbox-icon"></span>
-            <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю</span>
-            <a href="#" class="checkbox-link">Условия договора</a>
-          </label>
-        </div> -->
-
-        <button type="submit" class="button button--white modal-buy__button">Send</button>
+       
+        <button type="submit" class="button button--white modal-buy__button" 
+        aria-label="button to ordered ice-cream">Send</button>
       </form>
 
       <!-- ==========здесь должна закончиться форма заказа мороженного==== -->
 
-      <div class="modal-buy__box modal-buy__box--bottom">
-        <div class="modal-buy__circle">IceCream</div>
-        <div class="modal-buy__circle">IceCream</div>
-        <div class="modal-buy__circle">IceCream</div>
-      </div>
+      <ul class="modal-buy__box modal-buy__box--bottom">
+        <li class="modal-buy__circle">IceCream</li>
+        <li class="modal-buy__circle">IceCream</li>
+        <li class="modal-buy__circle">IceCream</li>
+      </ul>
     </div>
   </div>
 </div>

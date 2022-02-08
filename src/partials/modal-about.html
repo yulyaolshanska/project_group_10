@@ -1,11 +1,12 @@
 <div class="modal-about__backdrop backdrop visually-hidden modal-about__offer modal-about-menu__offer" >
     <div class="modal-about ">
-      <button class="modal-button__close modal-about--close modal-about-menu--close" >
+      <button class="modal-button__close modal-about--close modal-about-menu--close" 
+               aria-label="button for close modal window" >
         <svg class="modal-button__icon">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      <b class="contact-modal__title section__title">Eco specifics</b>
+      <b class="modal-about__title  section__title">Eco specifics</b>
   
     
     
@@ -169,9 +170,33 @@
 
              <!--=========== кнопки home  Franchise============-->
 
+             <!-- <ul class="contacts-button">
+              <li class="contacts-button__item">
+                <button type="button" class="button button--pink contacts__button" 
+                aria-label="button for open mobile-menu"
+                data-contact-modal-open>
+                  Our Locations
+                </button>
+              </li>
+              <li class="contacts-button__item">
+                <button
+                  type="button"
+                  class="button button--white contacts__button"
+                  data-contact-franchise-modal-open
+                  aria-label="button for open mobile-menu"
+                >
+                  Franchise
+                </button>
+              </li>
+            </ul> -->
+
+
              <div class="contact-modal__button-box">
-              <a href="./" class="contact-modal__link">Home</a>
-              <button class="button button--white contact-modal__button">Franchise</button>
+              <a href="./" class="contact-modal__link" 
+              aria-label="button for site navigation">Home</a>
+              <button class="button button--white contact-modal__button" 
+                      data-contact-franchise-modal-open
+                      aria-label="button for open mobile-menu">Franchise</button>
             </div>
 
 <!--=========== кнопки home  Franchise   end ============-->
@@ -189,7 +214,8 @@
 <a href="#" class="up-button__link">
 <div class="up-button__cover">
   
-<button type="button" class="button--pink up-button">
+<button type="button" class="button--pink up-button"
+aria-label="button for page back home">
   <!-- <svg class="btn-icon">
     <use width="12" height="12" href="./images/symbol-defs.svg#icon-arrow-right2"></use>
   </svg> -->
