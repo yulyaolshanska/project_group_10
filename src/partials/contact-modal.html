@@ -1,6 +1,7 @@
 <div class="contact_modal__backdrop visually-hidden" data-contact-modal>
   <div class="contact-modal">
-    <button class="modal-button__close" data-contact-modal-close>
+    <button class="modal-button__close" data-contact-modal-close
+    aria-label="button for close modal window">
       <svg class="modal-button__icon">
         <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
@@ -25,6 +26,8 @@
       <iframe
         src="https://www.google.com/maps/d/u/0/embed?mid=1GjoIbMz_y6WZ2c9CCroh4yJi62FcQs4F&ehbc=2E312F"
         class="contact-modal__map"
+        name="map"
+        aria-label="this map includes 3 cities of USA"
       ></iframe>
 
       <div class="modal-box">
@@ -43,7 +46,7 @@
 
     <div class="contact-modal__button-box">
       <a href="./" 
-          class="contact-modal__link button button--pink"
+           class="contact-modal__link button button--pink"
           target="_blank" rel="noreferrer noopener" 
           aria-label="button for site navigation">Home</a>
       <button class="button button--white contact-modal__button"

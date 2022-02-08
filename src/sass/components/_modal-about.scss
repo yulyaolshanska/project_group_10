@@ -48,14 +48,12 @@
     padding: 52px 27px 32px 27px;
 
     transform: translate(-50%, -50%) scale(1);
-    // max-width: 700px;
-    // min-height: 760px;
-    // width: 100%;
+    
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 1056px;
-    // min-height: 1128px;
+    
   }
 }
 
@@ -63,9 +61,6 @@ body.modal-about-menu--visible {
   overflow: hidden;
 }
 
-// .backdrop.visually-hidden .modal-about {
-//   transform: translate(-50%, -50%) scale(1.2);
-// }
 
 .modal-about__title {
   @media screen and (max-width: $mobile-only) {
