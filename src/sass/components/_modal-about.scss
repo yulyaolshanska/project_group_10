@@ -190,9 +190,7 @@ body.modal-about-menu--visible {
 
 .modal-about__text {
   
-  // overflow-x: hidden;
-
-  margin-top: 30px;
+ margin-top: 30px;
 }
 
 // здесь заканчивается описание продукта
@@ -212,22 +210,7 @@ body.modal-about-menu--visible {
   padding: 16px;
   border-radius: 50%;
   border: solid 9px var(--mobile-menu-bgc);
-  // border: solid 6px greenyellow;
-
-  // &:hover,
-  // &:focus {
-  //   // background-color: var(--hover-button-bgc);
-  //   // box-shadow: -2px 3px 4px var(--hover-button-shadow);
-  //   // transform: scale(0.95);
-   
-    
-
-  //   // box-shadow:   -2px 3px 15px var(--dark-brand-color),
-  //   //               0px 1px 10px var(--dark-brand-color), 
-  //   //               3px 1px 6px var(--dark-brand-color);
-
-  //   // box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);             
-  // }
+ 
 
   @media screen and (max-width: $mobile-only) {
     right:    25px;
