@@ -1,61 +1,4 @@
-.modal-about__backdrop {
-  z-index: 9999;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  // width: 100%;
-  // height: 100%;
-  background-image: linear-gradient(to right, rgba(238, 174, 202, 0.8), rgba(178, 181, 184, 0.6));
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 93px 15px;
-  overflow-y: scroll;
-}
 
-.modal-about {
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-
-  max-width: 75vw;
-  height: 75vh;
-  width: 100%;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-image: linear-gradient(
-    to right top,
-    rgba(211, 45, 117, 0.8),
-    rgba(238, 174, 202, 0.8),
-    rgba(170, 65, 170, 0.6)
-  );
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 30px 20px 30px 20px;
-
-  @media screen and (min-width: $tablet) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: left;
-    padding: 52px 27px 32px 27px;
-
-    transform: translate(-50%, -50%) scale(1);
-    
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1056px;
-    
-  }
-}
 
 body.modal-about-menu--visible {
   overflow: hidden;
@@ -63,82 +6,21 @@ body.modal-about-menu--visible {
 
 
 .modal-about__title {
-  @media screen and (max-width: $mobile-only) {
+
+  @media screen and (min-width: 320px) {
+   font-size: 17px;
+  }
+  @media screen and (min-width: $mobile) {
     font-size: 20px;
-
-}}
-
-
-.modal-button__close {
-  width: 40px;
-  height: 40px;
-  background-color: var(--main-bgc);
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.modal-button__icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--accent-color);
-}
-
-.contact-modal__title {
-  text-align: center;
-
+  }
   @media screen and (min-width: $tablet) {
-    text-align: left;
+    font-size: 32px;
+
   }
+
 }
 
-.contact-modal__img {
-  @media screen and (max-width: $mobile-only) {
-    display: none;
-  }
-  display: block;
-  position: absolute;
-  top: 40px;
-  right: 80px;
-  width: 168px;
-  height: 133px;
-  z-index: -1;
 
-  @media screen and (min-width: $desktop) {
-    top: 40px;
-    right: 80px;
-    width: 300px;
-    height: 300px;
-  }
-
-  &::after {
-    content: '';
-    background-image: url('../images/Contacts/ellipse.svg');
-    background-repeat: no-repeat;
-
-    @media screen and (max-width: $mobile-only) {
-      display: none;
-    }
-    @media screen and (min-width: $tablet) {
-      height: 324px;
-      width: 322px;
-      position: absolute;
-      top: -120px;
-      right: -120px;
-      z-index: -2;
-    }
-    @media screen and (min-width: $desktop) {
-      top: -120px;
-      right: -15px;
-    }
-  }
-}
 
 
 // =======modal buy block контейнер для формы и кругов
@@ -151,13 +33,15 @@ body.modal-about-menu--visible {
   align-items: center;
   background-color: wheat;
   
-  overflow-x: hidden;
-  height: 44vh;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  overflow-x: scroll;
+  height: 280px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 
   @media screen and (min-width: $mobile) {
-    // height: 50vh;
+    height: 50vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -166,8 +50,24 @@ body.modal-about-menu--visible {
 // здесь начинается описание продукта
 
 .modal-about__write {
-  margin-bottom: 20px;
   width: 60vw;
+
+  @media screen and (min-width: 320px) {
+    width: 200px;
+    
+  }
+
+  @media screen and (min-width: $mobile ) {
+    width: 300px;
+   
+   }
+
+   @media screen and (min-width: $tablet ) {
+    width: 480px;
+    
+  }
+
+
 }
 
 .modal-about__label {
@@ -175,22 +75,65 @@ body.modal-about-menu--visible {
   top: -1px;
 
   margin: 0;
-  padding: 16px;
+  padding: 10px;
+
+  font-size: 14px ;
+
   color: var(--secondary-text-color);
   background-color: var(--brand-color);
   outline: var(--accent-color);
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width: 320px) {
+    
+      padding: 12px;
+      font-size: 16px ;
+    }
+
+    @media screen and (min-width: $mobile ) {
+      
+      font-size: 18px ;
+    }
+
+    @media screen and (min-width: $tablet ) {
+      padding: 15px;
+      font-size: 24px ;
+    }
+
 }
 
 .modal-about__text {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
   
- margin-top: 30px;
+  @media screen and (min-width: $mobile ) {
+    width: 300px;
+    
+  }
+
+  @media screen and (min-width: $tablet ) {
+    width: 480px;
+    
+  }
+ 
 }
 
 // здесь заканчивается описание продукта
 
-
+.modal-about__button--franchise {
+  @media screen and (max-width: $mobile-only ) {
+    display: none;
+  }
+}
 
 
 // кнопка невозврата
